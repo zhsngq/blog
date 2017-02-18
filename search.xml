@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  
+  
+    
+    <entry>
+      <title><![CDATA[nginx]]></title>
+      <url>https://zhsngq.github.io/blog/2017/02/18/ngnix/</url>
+      <content type="html"><![CDATA[<p>window 下配制nginx服务器<br><a id="more"></a></p>
+<blockquote>
+<p>nginx 配置文件</p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div></pre></td><td class="code"><pre><div class="line"><span class="comment">#user  nobody;</span></div><div class="line">worker_processes  1;</div><div class="line"></div><div class="line"><span class="comment">#error_log  logs/error.log;</span></div><div class="line"><span class="comment">#error_log  logs/error.log  notice;</span></div><div class="line"><span class="comment">#error_log  logs/error.log  info;</span></div><div class="line"></div><div class="line"><span class="comment">#pid        logs/nginx.pid;</span></div><div class="line"></div><div class="line">events &#123;</div><div class="line">    worker_connections  1024;</div><div class="line">&#125;</div><div class="line"></div><div class="line">http &#123;</div><div class="line">    <span class="comment"># 编码</span></div><div class="line">    charset utf-8;</div><div class="line">    <span class="comment"># 上传文件大小</span></div><div class="line">    client_max_body_size 10M;</div><div class="line">    <span class="comment">#设定mime类型,类型由mime.type文件定义</span></div><div class="line">    include    mime.types;</div><div class="line">    default_type  application/octet-stream;</div><div class="line">    sendfile     on;</div><div class="line">    keepalive_timeout  65;</div><div class="line">    <span class="comment">#设定请求缓冲</span></div><div class="line">    client_header_buffer_size    128k;</div><div class="line">    large_client_header_buffers  4 128k;</div><div class="line"></div><div class="line">    server &#123;</div><div class="line">        listen 80;</div><div class="line">        server_name localhost;</div><div class="line"></div><div class="line">        root D:/workspace;</div><div class="line">        index index.html index.htm index.php;</div><div class="line"></div><div class="line">        location / &#123;</div><div class="line">            try_files <span class="variable">$uri</span> <span class="variable">$uri</span>/ /index.php<span class="variable">$is_args</span><span class="variable">$args</span>;</div><div class="line">        &#125;</div><div class="line"></div><div class="line">        location ~ \.php$ &#123;</div><div class="line">            try_files <span class="variable">$uri</span> =404;</div><div class="line">            include fastcgi.conf;</div><div class="line">            fastcgi_pass 127.0.0.1:9000;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<blockquote>
+<p>启动nginx</p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">start nginx</div><div class="line">nginx <span class="_">-s</span> reload</div><div class="line">nginx <span class="_">-s</span> stop</div><div class="line"><span class="built_in">set</span> PHP_FCGI_CHILDREN=5</div><div class="line"><span class="built_in">set</span> PHP_FCGI_MAX_REQUESTS=100000</div><div class="line">start D:/TOOL/php/php-cgi.exe -b 127.0.0.1:9000 -c D:/TOOL/php/php.ini</div></pre></td></tr></table></figure>
+]]></content>
+      
+        <categories>
+            
+            <category> 服务器 </category>
+            
+            <category> nginx </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> 服务器 </tag>
+            
+            <tag> nginx </tag>
+            
+            <tag> windows </tag>
+            
+        </tags>
+        
+    </entry>
+    
+  
+  
+    
+    <entry>
+      <title><![CDATA[关于]]></title>
+      <url>https://zhsngq.github.io/about/index.html</url>
+      <content type="html"><![CDATA[<p>大家好，我是zhsngq。欢迎来到我的个人技术博客。</p>
+]]></content>
+    </entry>
+    
+  
+</search>
