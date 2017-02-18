@@ -38,6 +38,33 @@
         
     </entry>
     
+    <entry>
+      <title><![CDATA[Hexo]]></title>
+      <url>https://zhsngq.github.io/blog/2017/02/18/install_hexo/</url>
+      <content type="html"><![CDATA[<p>静态博客生成工具<br><a id="more"></a></p>
+<blockquote>
+<p>Hexo 安装</p>
+</blockquote>
+<p>node版本 ：node-v6.9.5<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install -g hexo-cli</div></pre></td></tr></table></figure></p>
+]]></content>
+      
+        <categories>
+            
+            <category> 工具 </category>
+            
+            <category> hexo </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> 工具 </tag>
+            
+        </tags>
+        
+    </entry>
+    
   
   
     
