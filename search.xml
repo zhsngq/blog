@@ -5,7 +5,7 @@
     
     <entry>
       <title><![CDATA[nginx]]></title>
-      <url>https://zhsngq.github.io/blog/2017/02/18/ngnix/</url>
+      <url>https://zhsngq.github.io/blog/blog/2017/02/18/ngnix/</url>
       <content type="html"><![CDATA[<p>window 下配制nginx服务器<br><a id="more"></a></p>
 <blockquote>
 <p>nginx 配置文件</p>
@@ -40,7 +40,7 @@
     
     <entry>
       <title><![CDATA[Hexo]]></title>
-      <url>https://zhsngq.github.io/blog/2017/02/18/install_hexo/</url>
+      <url>https://zhsngq.github.io/blog/blog/2017/02/18/install_hexo/</url>
       <content type="html"><![CDATA[<p>静态博客生成工具<br><a id="more"></a></p>
 <blockquote>
 <p>Hexo 安装</p>
@@ -70,7 +70,7 @@
     
     <entry>
       <title><![CDATA[关于]]></title>
-      <url>https://zhsngq.github.io/about/index.html</url>
+      <url>https://zhsngq.github.io/blog/about/index.html</url>
       <content type="html"><![CDATA[<p>大家好，我是zhsngq。欢迎来到我的个人技术博客。</p>
 ]]></content>
     </entry>
