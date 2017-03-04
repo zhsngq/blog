@@ -4,6 +4,41 @@
   
     
     <entry>
+      <title><![CDATA[php 源码默认导入包]]></title>
+      <url>https://zhsngq.github.io/blog/blog/2017/02/27/phprequire/</url>
+      <content type="html"><![CDATA[<a id="more"></a>
+<blockquote>
+<p>php配置文件修改</p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">auto_prepend_file = <span class="string">"D:/vendor/run.php"</span></div></pre></td></tr></table></figure>
+<blockquote>
+<p>添加run文件</p>
+</blockquote>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">require</span>(<span class="string">'autoload.php'</span>);</div><div class="line"><span class="comment">// add debug tool</span></div><div class="line">\Tracy\Debugger::enable();</div></pre></td></tr></table></figure>
+]]></content>
+      
+        <categories>
+            
+            <category> php </category>
+            
+            <category> require </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> 服务器 </tag>
+            
+            <tag> nginx </tag>
+            
+            <tag> windows </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[sublime Code 配置和快捷键]]></title>
       <url>https://zhsngq.github.io/blog/blog/2017/02/27/sublime/</url>
       <content type="html"><![CDATA[<a id="more"></a>
@@ -39,35 +74,27 @@
     </entry>
     
     <entry>
-      <title><![CDATA[php 源码默认导入包]]></title>
-      <url>https://zhsngq.github.io/blog/blog/2017/02/27/phprequire/</url>
+      <title><![CDATA[静态博客生成工具 Hexo]]></title>
+      <url>https://zhsngq.github.io/blog/blog/2017/02/18/install_hexo/</url>
       <content type="html"><![CDATA[<a id="more"></a>
 <blockquote>
-<p>php配置文件修改</p>
+<p>Hexo 安装</p>
 </blockquote>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">auto_prepend_file = <span class="string">"D:/vendor/run.php"</span></div></pre></td></tr></table></figure>
-<blockquote>
-<p>添加run文件</p>
-</blockquote>
-<figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">require</span>(<span class="string">'autoload.php'</span>);</div><div class="line"><span class="comment">// add debug tool</span></div><div class="line">\Tracy\Debugger::enable();</div></pre></td></tr></table></figure>
+<p>node版本 ：node-v6.9.5<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="comment">#安装脚手架</span></div><div class="line">$ npm install -g hexo-cli</div><div class="line"><span class="comment">#安装包</span></div><div class="line">$ npm install</div><div class="line"><span class="comment">#预览页面</span></div><div class="line">$ npm s</div><div class="line"><span class="comment"># 生成结果 cd public</span></div><div class="line">$ npm g</div><div class="line"><span class="comment">#发布脚本</span></div></pre></td></tr></table></figure></p>
 ]]></content>
       
         <categories>
             
-            <category> php </category>
+            <category> 工具 </category>
             
-            <category> require </category>
+            <category> hexo </category>
             
         </categories>
         
         
         <tags>
             
-            <tag> 服务器 </tag>
-            
-            <tag> nginx </tag>
-            
-            <tag> windows </tag>
+            <tag> 工具 </tag>
             
         </tags>
         
@@ -104,33 +131,6 @@
             <tag> nginx </tag>
             
             <tag> windows </tag>
-            
-        </tags>
-        
-    </entry>
-    
-    <entry>
-      <title><![CDATA[静态博客生成工具 Hexo]]></title>
-      <url>https://zhsngq.github.io/blog/blog/2017/02/18/install_hexo/</url>
-      <content type="html"><![CDATA[<a id="more"></a>
-<blockquote>
-<p>Hexo 安装</p>
-</blockquote>
-<p>node版本 ：node-v6.9.5<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="comment">#安装脚手架</span></div><div class="line">$ npm install -g hexo-cli</div><div class="line"><span class="comment">#安装包</span></div><div class="line">$ npm install</div><div class="line"><span class="comment">#预览页面</span></div><div class="line">$ npm s</div><div class="line"><span class="comment"># 生成结果 cd public</span></div><div class="line">$ npm g</div><div class="line"><span class="comment">#发布脚本</span></div></pre></td></tr></table></figure></p>
-]]></content>
-      
-        <categories>
-            
-            <category> 工具 </category>
-            
-            <category> hexo </category>
-            
-        </categories>
-        
-        
-        <tags>
-            
-            <tag> 工具 </tag>
             
         </tags>
         
