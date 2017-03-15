@@ -4,6 +4,56 @@
   
     
     <entry>
+      <title><![CDATA[linux 安装应用]]></title>
+      <url>https://zhsngq.github.io/blog/blog/2017/03/15/linux/</url>
+      <content type="html"><![CDATA[<a id="more"></a>
+<blockquote>
+<p>解压资源包</p>
+</blockquote>
+<p>file.tar.gz<br>$ tar jxvf file.tar.bz2</p>
+<p>file.tar.bz2<br>$ tar zxvf file.tar.gz</p>
+<blockquote>
+<p>查看安装配置</p>
+</blockquote>
+<p>$ ./configure –help</p>
+<blockquote>
+<p>设置安装路径</p>
+</blockquote>
+<p>$ ./configure –prefix=路径</p>
+<blockquote>
+<p>make</p>
+</blockquote>
+<p>make会根据Makefile中的规则调用合适的编译器编译所有与当前软件相依赖的源码，生成所有相关的目标文件，最后再使用链接器生成最终的可执行程序:</p>
+<blockquote>
+<p>make install</p>
+</blockquote>
+<p>最后要做的就是将可执行程序安装到正确的位置 make &amp;&amp; make install</p>
+<blockquote>
+<p>make clean</p>
+</blockquote>
+<p>“make clean”用来清除编译连接过程中的一些临时文件,”make uninstall”是卸载相关应用程序</p>
+]]></content>
+      
+        <categories>
+            
+            <category> 服务器 </category>
+            
+            <category> linux </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> 服务器 </tag>
+            
+            <tag> linux </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[php 源码默认导入包]]></title>
       <url>https://zhsngq.github.io/blog/blog/2017/02/27/phprequire/</url>
       <content type="html"><![CDATA[<a id="more"></a>
