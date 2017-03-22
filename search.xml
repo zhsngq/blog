@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title><![CDATA[cmd 常用命令]]></title>
+      <url>https://zhsngq.github.io/blog/blog/2017/03/22/cmd/</url>
+      <content type="html"><![CDATA[<a id="more"></a>
+<blockquote>
+<p>管理进程</p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="comment">#列出windows进程</span></div><div class="line">tasklist</div><div class="line"><span class="comment">#结束windows进程</span></div><div class="line">taskkill /f /t /im &lt;name&gt;.exe</div><div class="line"><span class="comment">#列出window服务</span></div><div class="line">sc query</div><div class="line"><span class="comment">#删除服务</span></div><div class="line">sc delete &lt;SERVICE_NAME&gt;</div></pre></td></tr></table></figure>
+]]></content>
+      
+        <categories>
+            
+            <category> windows </category>
+            
+            <category> cmd </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> cmd </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[基本css布局]]></title>
       <url>https://zhsngq.github.io/blog/blog/2017/03/16/baseCss/</url>
       <content type="html"><![CDATA[<a id="more"></a>
