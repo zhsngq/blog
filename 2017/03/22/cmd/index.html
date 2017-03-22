@@ -12,7 +12,7 @@
     
     <meta name="description" content="管理进程
 
-12345678#列出windows进程tasklist#结束windows进程taskkill /f /t /im &amp;lt;name&amp;gt;.exe#列出window服务sc query#删除服务sc delete &amp;lt;SERVICE_NAME&amp;gt;">
+12345678910#列出windows进程tasklist#结束windows进程taskkill /f /t /im &amp;lt;name&amp;gt;.exe#列出window服务sc query#删除服务sc delete &amp;lt;SERVICE_NAME&amp;gt;   #禁止服务   s">
     
     
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -314,7 +314,7 @@
 <blockquote>
 <p>管理进程</p>
 </blockquote>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="comment">#列出windows进程</span></div><div class="line">tasklist</div><div class="line"><span class="comment">#结束windows进程</span></div><div class="line">taskkill /f /t /im &lt;name&gt;.exe</div><div class="line"><span class="comment">#列出window服务</span></div><div class="line">sc query</div><div class="line"><span class="comment">#删除服务</span></div><div class="line">sc delete &lt;SERVICE_NAME&gt;</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="comment">#列出windows进程</span></div><div class="line">tasklist</div><div class="line"><span class="comment">#结束windows进程</span></div><div class="line">taskkill /f /t /im &lt;name&gt;.exe</div><div class="line"><span class="comment">#列出window服务</span></div><div class="line">sc query</div><div class="line"><span class="comment">#删除服务</span></div><div class="line">sc delete &lt;SERVICE_NAME&gt;</div><div class="line">   <span class="comment">#禁止服务</span></div><div class="line">   sc config &lt;name&gt; start = disabled</div></pre></td></tr></table></figure>
 
                 
 
