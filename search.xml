@@ -228,6 +228,33 @@
     </entry>
     
     <entry>
+      <title><![CDATA[sublime Code 配置和快捷键]]></title>
+      <url>https://zhsngq.github.io/blog/blog/2017/02/27/git/</url>
+      <content type="html"><![CDATA[<p>git 冲突 使用 stash | pop<br><a id="more"></a></p>
+<blockquote>
+<p>git stash</p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 添加到缓冲区</span></div><div class="line">git add .</div><div class="line">git stash</div><div class="line">git pull</div><div class="line">git stash pop</div></pre></td></tr></table></figure>
+]]></content>
+      
+        <categories>
+            
+            <category> 工具 </category>
+            
+            <category> git </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> 工具 </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[静态博客生成工具 Hexo]]></title>
       <url>https://zhsngq.github.io/blog/blog/2017/02/18/install_hexo/</url>
       <content type="html"><![CDATA[<a id="more"></a>
