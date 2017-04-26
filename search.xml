@@ -4,6 +4,72 @@
   
     
     <entry>
+      <title><![CDATA[php 源码默认导入包]]></title>
+      <url>https://zhsngq.github.io/blog/blog/2017/04/26/phprequire/</url>
+      <content type="html"><![CDATA[<a id="more"></a>
+<blockquote>
+<p>composer.json</p>
+</blockquote>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">    <span class="attr">"require"</span>: &#123;</div><div class="line">        <span class="attr">"raveren/kint"</span>: <span class="string">"^1.0"</span>,</div><div class="line">        <span class="attr">"filp/whoops"</span>: <span class="string">"^2.1"</span>,</div><div class="line">        <span class="attr">"maximebf/debugbar"</span>: <span class="string">"^1.13"</span>,</div><div class="line">        <span class="attr">"tracy/tracy"</span>: <span class="string">"^2.4"</span></div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<blockquote>
+<p>php配置文件修改</p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">auto_prepend_file = <span class="string">"D:/vendor/run.php"</span></div></pre></td></tr></table></figure>
+<blockquote>
+<p>添加run文件</p>
+</blockquote>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">require</span>(<span class="string">'autoload.php'</span>);</div><div class="line"><span class="comment">// add debug tool</span></div><div class="line">\Tracy\Debugger::enable();</div></pre></td></tr></table></figure>
+]]></content>
+      
+        <categories>
+            
+            <category> php </category>
+            
+            <category> require </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> 服务器 </tag>
+            
+            <tag> nginx </tag>
+            
+            <tag> windows </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[sublime Code 配置和快捷键]]></title>
+      <url>https://zhsngq.github.io/blog/blog/2017/04/26/git/</url>
+      <content type="html"><![CDATA[<p>git 冲突 使用 stash | pop<br><a id="more"></a></p>
+<blockquote>
+<p>git stash</p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 添加到缓冲区</span></div><div class="line">git add .</div><div class="line">git stash</div><div class="line">git pull</div><div class="line">git stash pop</div></pre></td></tr></table></figure>
+]]></content>
+      
+        <categories>
+            
+            <category> 工具 </category>
+            
+            <category> git </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> 工具 </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[window 下配制nginx服务器]]></title>
       <url>https://zhsngq.github.io/blog/blog/2017/04/06/ngnix/</url>
       <content type="html"><![CDATA[<a id="more"></a>
@@ -154,41 +220,6 @@
     </entry>
     
     <entry>
-      <title><![CDATA[php 源码默认导入包]]></title>
-      <url>https://zhsngq.github.io/blog/blog/2017/02/27/phprequire/</url>
-      <content type="html"><![CDATA[<a id="more"></a>
-<blockquote>
-<p>php配置文件修改</p>
-</blockquote>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">auto_prepend_file = <span class="string">"D:/vendor/run.php"</span></div></pre></td></tr></table></figure>
-<blockquote>
-<p>添加run文件</p>
-</blockquote>
-<figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">require</span>(<span class="string">'autoload.php'</span>);</div><div class="line"><span class="comment">// add debug tool</span></div><div class="line">\Tracy\Debugger::enable();</div></pre></td></tr></table></figure>
-]]></content>
-      
-        <categories>
-            
-            <category> php </category>
-            
-            <category> require </category>
-            
-        </categories>
-        
-        
-        <tags>
-            
-            <tag> 服务器 </tag>
-            
-            <tag> nginx </tag>
-            
-            <tag> windows </tag>
-            
-        </tags>
-        
-    </entry>
-    
-    <entry>
       <title><![CDATA[sublime Code 配置和快捷键]]></title>
       <url>https://zhsngq.github.io/blog/blog/2017/02/27/sublime/</url>
       <content type="html"><![CDATA[<a id="more"></a>
@@ -215,33 +246,6 @@
             <category> 工具 </category>
             
             <category> sublime </category>
-            
-        </categories>
-        
-        
-        <tags>
-            
-            <tag> 工具 </tag>
-            
-        </tags>
-        
-    </entry>
-    
-    <entry>
-      <title><![CDATA[sublime Code 配置和快捷键]]></title>
-      <url>https://zhsngq.github.io/blog/blog/2017/02/27/git/</url>
-      <content type="html"><![CDATA[<p>git 冲突 使用 stash | pop<br><a id="more"></a></p>
-<blockquote>
-<p>git stash</p>
-</blockquote>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 添加到缓冲区</span></div><div class="line">git add .</div><div class="line">git stash</div><div class="line">git pull</div><div class="line">git stash pop</div></pre></td></tr></table></figure>
-]]></content>
-      
-        <categories>
-            
-            <category> 工具 </category>
-            
-            <category> git </category>
             
         </categories>
         
