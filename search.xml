@@ -4,6 +4,38 @@
   
     
     <entry>
+      <title><![CDATA[mysql 5.6 安装]]></title>
+      <url>https://zhsngq.github.io/blog/blog/2017/05/03/mysql/</url>
+      <content type="html"><![CDATA[<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">初始化密码</div><div class="line">　　mysql -u root</div><div class="line">　　mysql&gt; SET PASSWORD FOR <span class="string">'root'</span>@<span class="string">'localhost'</span> = PASSWORD(<span class="string">'newpass'</span>);</div></pre></td></tr></table></figure>
+<a id="more"></a>
+<blockquote>
+<p>mysql5.6 安装</p>
+</blockquote>
+<p>下载 mysql.zip 包<br>将bin目录加入环境变量<br>修改 my-default.ini<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">basedir = E:\basedir</div><div class="line">datadir = E:\datadir</div><div class="line">port = 3306</div><div class="line"></div><div class="line">join_buffer_size = 128M</div><div class="line">sort_buffer_size = 2M</div><div class="line">read_rnd_buffer_size = 2M</div><div class="line"></div><div class="line"><span class="comment">#mysqld -install</span></div><div class="line"><span class="comment">#mysqld -remove</span></div><div class="line"><span class="comment">#net mysql start</span></div></pre></td></tr></table></figure></p>
+<blockquote>
+<p>mysql 设置root密码</p>
+</blockquote>
+<p>用SET PASSWORD命令<br>　　mysql -u root<br>　　mysql&gt; SET PASSWORD FOR ‘root’@’localhost’ = PASSWORD(‘newpass’);</p>
+]]></content>
+      
+        <categories>
+            
+            <category> mysql </category>
+            
+            <category> 安装 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> mysql </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[php 源码默认导入包]]></title>
       <url>https://zhsngq.github.io/blog/blog/2017/04/26/phprequire/</url>
       <content type="html"><![CDATA[<p>php 配置高效debug log<br><figure class="highlight json"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">    <span class="attr">"require"</span>: &#123;</div><div class="line">        <span class="attr">"raveren/kint"</span>: <span class="string">"^1.0"</span>,</div><div class="line">        <span class="attr">"filp/whoops"</span>: <span class="string">"^2.1"</span>,</div><div class="line">        <span class="attr">"maximebf/debugbar"</span>: <span class="string">"^1.13"</span>,</div><div class="line">        <span class="attr">"tracy/tracy"</span>: <span class="string">"^2.4"</span></div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>

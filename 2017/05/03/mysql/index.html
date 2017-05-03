@@ -7,13 +7,15 @@
 
     
 
-    <title>工具 | </title>
+    <title>mysql 5.6 安装 | </title>
     <meta name="author" content="zhsngq">
+    
+    <meta name="description" content="123初始化密码　　mysql -u root　　mysql&amp;gt; SET PASSWORD FOR &#39;root&#39;@&#39;localhost&#39; = PASSWORD(&#39;newpass&#39;);">
     
     
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    
+    <meta property="og:title" content="mysql 5.6 安装"/>
     <meta property="og:site_name" content="zhsngq"/>
 
     
@@ -280,42 +282,86 @@
 
     <main>
         <div class="container main-container">
-    
-
-<nav class="page-nav hide-on-small-only">
+    <nav class="page-nav hide-on-small-only">
     <div class="nav-wrapper teal lighten-1">
-        <span class="breadcrumb">当前位置（标签）</span>
+        <span class="breadcrumb">当前位置（分类目录）</span>
         
+            
+    
+    
+    <a class="breadcrumb" href="/blog/categories/mysql/">mysql</a><a class="breadcrumb" href="/blog/categories/mysql/安装/">安装</a>
+
 
         
-            <a class="breadcrumb" href="/tags/工具/">工具</a>
+
         
     </div>
 </nav>
 
+<article>
+    <div class="card">
+        <div class="card-content">
+            
+
+            <div class="article-title">
+                
+    
+        <h1>mysql 5.6 安装</h1>
+    
 
 
-    <div class="collection mt-0">
+            </div>
+            <time class="pink-link-context" datetime="2017-05-02T16:00:00.000Z"><a href="/blog/2017/05/03/mysql/">2017-05-03</a></time>
+
+            <span id="busuanzi_container_page_pv" class="read-times-container">
+    <i class="fa fa-eye"></i>
+    <span id="busuanzi_value_page_pv"></span>
+</span>
+
+            
+    <div class="tags-row">
         
-            <a href="/blog/2017/04/26/git/" class="collection-item grey-text text-darken-1">
-                <time datetime="2017-04-25T16:00:00.000Z">2017-04-26</time>
-                <span>&nbsp;&nbsp;&nbsp;</span>
-                git 使用篇
-            </a>
-        
-            <a href="/blog/2017/02/27/sublime/" class="collection-item grey-text text-darken-1">
-                <time datetime="2017-02-26T16:00:00.000Z">2017-02-27</time>
-                <span>&nbsp;&nbsp;&nbsp;</span>
-                sublime Code 配置和快捷键
-            </a>
-        
-            <a href="/blog/2017/02/18/install_hexo/" class="collection-item grey-text text-darken-1">
-                <time datetime="2017-02-17T16:00:00.000Z">2017-02-18</time>
-                <span>&nbsp;&nbsp;&nbsp;</span>
-                静态博客生成工具 Hexo
-            </a>
+            <a href="/blog/tags/mysql/" class="chip blue darken-2">mysql</a>
         
     </div>
+
+
+            <div class="toc pink-link-context hide-on-med-and-down">
+    
+</div>
+
+
+            <div class="entry pink-link-context">
+                <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">初始化密码</div><div class="line">　　mysql -u root</div><div class="line">　　mysql&gt; SET PASSWORD FOR <span class="string">'root'</span>@<span class="string">'localhost'</span> = PASSWORD(<span class="string">'newpass'</span>);</div></pre></td></tr></table></figure>
+<a id="more"></a>
+<blockquote>
+<p>mysql5.6 安装</p>
+</blockquote>
+<p>下载 mysql.zip 包<br>将bin目录加入环境变量<br>修改 my-default.ini<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">basedir = E:\basedir</div><div class="line">datadir = E:\datadir</div><div class="line">port = 3306</div><div class="line"></div><div class="line">join_buffer_size = 128M</div><div class="line">sort_buffer_size = 2M</div><div class="line">read_rnd_buffer_size = 2M</div><div class="line"></div><div class="line"><span class="comment">#mysqld -install</span></div><div class="line"><span class="comment">#mysqld -remove</span></div><div class="line"><span class="comment">#net mysql start</span></div></pre></td></tr></table></figure></p>
+<blockquote>
+<p>mysql 设置root密码</p>
+</blockquote>
+<p>用SET PASSWORD命令<br>　　mysql -u root<br>　　mysql&gt; SET PASSWORD FOR ‘root’@’localhost’ = PASSWORD(‘newpass’);</p>
+
+                
+
+
+<p class="pink-link-context">
+    <a href="/blog/2017/04/26/phprequire/" rel="next" title="php 源码默认导入包">
+    下一篇：php 源码默认导入包
+  </a>
+</p>
+
+
+            </div>
+			
+        </div>
+    </div>
+</article>
+
+
+
+
 
 
 </div>
