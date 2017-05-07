@@ -329,36 +329,21 @@
 
 
             <div class="toc pink-link-context hide-on-med-and-down">
-    
+    <ol class="section table-of-contents"><li class="section table-of-contents-item section table-of-contents-level-2"><a class="section table-of-contents-link" href="#安装"><span class="section table-of-contents-text">安装</span></a><ol class="section table-of-contents-child"><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#解压资源包"><span class="section table-of-contents-text">解压资源包</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#查看安装配置"><span class="section table-of-contents-text">查看安装配置</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#设置安装路径"><span class="section table-of-contents-text">设置安装路径</span></a></li></ol></li></ol>
 </div>
 
 
             <div class="entry pink-link-context">
                 <p>解压资源包    $ tar jxvf file.tar.bz2 $ tar zxvf file.tar.gz<br>查看安装配置  $ ./configure –help<br>设置安装路径  $ ./configure –prefix=路径<br><a id="more"></a></p>
-<blockquote>
-<p>解压资源包</p>
-</blockquote>
-<p>file.tar.gz<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ tar jxvf file.tar.bz2</div></pre></td></tr></table></figure></p>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><h3 id="解压资源包"><a href="#解压资源包" class="headerlink" title="解压资源包"></a>解压资源包</h3><p>file.tar.gz<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ tar jxvf file.tar.bz2</div></pre></td></tr></table></figure></p>
 <p>file.tar.bz2<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ tar zxvf file.tar.gz</div></pre></td></tr></table></figure></p>
-<blockquote>
-<p>查看安装配置</p>
-</blockquote>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ ./configure --help</div></pre></td></tr></table></figure>
-<blockquote>
-<p>设置安装路径</p>
-</blockquote>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ ./configure --prefix=路径</div></pre></td></tr></table></figure>
-<blockquote>
-<p>make</p>
-</blockquote>
+<h3 id="查看安装配置"><a href="#查看安装配置" class="headerlink" title="查看安装配置"></a>查看安装配置</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ ./configure --help</div></pre></td></tr></table></figure>
+<h3 id="设置安装路径"><a href="#设置安装路径" class="headerlink" title="设置安装路径"></a>设置安装路径</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ ./configure --prefix=路径</div></pre></td></tr></table></figure>
+<p><code>make</code></p>
 <p>make会根据Makefile中的规则调用合适的编译器编译所有与当前软件相依赖的源码，生成所有相关的目标文件，最后再使用链接器生成最终的可执行程序:</p>
-<blockquote>
-<p>make install</p>
-</blockquote>
+<p><code>make install</code></p>
 <p>最后要做的就是将可执行程序安装到正确的位置 make &amp;&amp; make install</p>
-<blockquote>
-<p>make clean</p>
-</blockquote>
+<p><code>make clean</code></p>
 <p>“make clean”用来清除编译连接过程中的一些临时文件,”make uninstall”是卸载相关应用程序</p>
 
                 
