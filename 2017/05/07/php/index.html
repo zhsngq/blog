@@ -260,6 +260,14 @@
 
         
 
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/blog/categories/ip/">
+                    ip <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
     </ul>
 </div>
 
@@ -341,6 +349,12 @@
 <h2 id="系统级别异常"><a href="#系统级别异常" class="headerlink" title="系统级别异常"></a>系统级别异常</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">register_shutdown_function(<span class="string">'zyfshutdownfunc'</span>);</div><div class="line"><span class="keyword">function</span> <span class="function"><span class="title">zyfshutdownfunc</span></span>()</div><div class="line">&#123;</div><div class="line">    <span class="keyword">if</span> (<span class="variable">$error</span> = error_get_last()) &#123;</div><div class="line">        <span class="variable">$errorStr</span> = <span class="variable">$error</span>[<span class="string">'type'</span>] . <span class="string">' &lt;br/&gt;Msg: '</span> . <span class="variable">$error</span>[<span class="string">'message'</span>] . <span class="string">' &lt;br/&gt; '</span> . <span class="variable">$error</span>[<span class="string">'file'</span>] . <span class="string">' &lt;/br&gt; '</span> . <span class="variable">$error</span>[<span class="string">'line'</span>] ;</div><div class="line">        message(<span class="variable">$errorStr</span>);</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 
                 
+<p class="pink-link-context">
+    <a href="/blog/2018/01/01/ip/" rel="next" title="被禁用ip">
+    上一篇：被禁用ip
+  </a>
+</p>
+
 
 
 <p class="pink-link-context">

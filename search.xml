@@ -4,6 +4,28 @@
   
     
     <entry>
+      <title><![CDATA[被禁用ip]]></title>
+      <url>https://zhsngq.github.io/blog/blog/2018/01/01/ip/</url>
+      <content type="html"><![CDATA[<p>被禁用ip<br><a id="more"></a></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># github</span></div><div class="line">192.30.253.118 gist.github.com</div><div class="line"><span class="comment">#192.30.253.119 gist.github.com</span></div><div class="line">50.116.34.243 sublime.wbond.net</div></pre></td></tr></table></figure>
+]]></content>
+      
+        <categories>
+            
+            <category> ip </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> windows </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[php 代码片段]]></title>
       <url>https://zhsngq.github.io/blog/blog/2017/05/07/php/</url>
       <content type="html"><![CDATA[<a id="more"></a>
