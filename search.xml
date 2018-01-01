@@ -106,7 +106,7 @@
 <blockquote>
 <p>git stash</p>
 </blockquote>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 添加到缓冲区a</span></div><div class="line">git add .</div><div class="line">git stash</div><div class="line">git pull</div><div class="line">git stash pop</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 添加到缓冲区</span></div><div class="line">git add .</div><div class="line">git stash</div><div class="line">git pull</div><div class="line">git stash pop</div></pre></td></tr></table></figure>
 ]]></content>
       
         <categories>
