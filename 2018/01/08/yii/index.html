@@ -1,0 +1,621 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    
+
+    <title>Yii 常用 | </title>
+    <meta name="author" content="zhsngq">
+    
+    <meta name="description" content="Yii 常用命令，函数集合">
+    
+    
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta property="og:title" content="Yii 常用"/>
+    <meta property="og:site_name" content="zhsngq"/>
+
+    
+    <meta property="og:image" content="undefined"/>
+    
+
+    <link rel="icon" type="image/png" href="/blog/favicon.png">
+    <link rel="alternate" href="/blog/atom.xml" title="zhsngq" type="application/atom+xml">
+    <link rel="stylesheet" href="/blog/css/lib/materialize.min.css">
+    <link rel="stylesheet" href="/blog/css/lib/font-awesome.min.css">
+    <link rel="stylesheet" href="/blog/css/style.css" media="screen" type="text/css">
+
+    
+        <link rel="stylesheet" href="/blog/css/lib/prettify-tomorrow-night-eighties.css" type="text/css">
+    
+    <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+
+
+<body>
+    <!--
+    <img src="/weixin_favicon.png" style="position: absolute; left: -9999px; opacity: 0; filter: alpha(opacity=0);">
+    -->
+    <nav class="teal lighten-1">
+    <div class="nav-wrapper">
+        <a href="#" data-activates="main-menu" class="button-collapse">
+            <i class="fa fa-navicon"></i>
+        </a>
+        <div class="">
+            <a href="/blog/" class="brand-logo hide-on-med-and-down">zhsngq</a>
+            <ul class="right hide-on-med-and-down">
+                
+                    <li>
+                        <a class="menu-home " href="/blog" >
+                            <i class="fa fa-home "></i>
+                            
+                            首页
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="menu-archive " href="/blog/archives" >
+                            <i class="fa fa-archive "></i>
+                            
+                            归档
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="menu-category category-menu" href="javascript:;" data-activates="category-menu" >
+                            <i class="fa fa-bookmark "></i>
+                            
+                            分类
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="menu-search modal-trigger " href="#search" >
+                            <i class="fa fa-search "></i>
+                            
+                            搜索
+                        </a>
+                    </li>
+                
+            </ul>
+            <div>
+    <ul class="side-nav teal lighten-1" id="main-menu">
+        
+        <li class="side-user">
+            <div class="row">
+                <div class="col s4 no-padding">
+                    <img class="avatar-image circle responsive-img" src="http://q.qlogo.cn/g?b=qq&amp;nk=815723901&amp;s=100&amp;t=1487388344530" alt="User Avatar">
+                </div>
+                <div class="info col s8 valign-wrapper no-padding">
+                    <div class="valign">
+                        <p class="name">zhsngq</p>
+                        <p class="desc">Java/PHP/Javascript</p>
+                    </div>
+                </div>
+            </div>
+        </li>
+        
+
+        
+            <li class="no-padding">
+                <a class="waves-effect menu-home " href="/blog" >
+                    <i class="fa fa-home "></i>
+                    
+                    首页
+                </a>
+            </li>
+        
+            <li class="no-padding">
+                <a class="waves-effect menu-archive " href="/blog/archives" >
+                    <i class="fa fa-archive "></i>
+                    
+                    归档
+                </a>
+            </li>
+        
+            <li class="no-padding">
+                <a class="waves-effect menu-category category-menu" href="javascript:;" data-activates="category-menu" >
+                    <i class="fa fa-bookmark "></i>
+                    
+                    分类
+                </a>
+            </li>
+        
+            <li class="no-padding">
+                <a class="waves-effect menu-search modal-trigger " href="#search" >
+                    <i class="fa fa-search "></i>
+                    
+                    搜索
+                </a>
+            </li>
+        
+    </ul>
+
+    <ul class="side-nav teal lighten-1" id="category-menu">
+    
+
+            
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/blog/categories/工具/">
+                    工具 <span class="right">3 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-1" collapse-level="1">
+                <a class="no-padding" href="/blog/categories/工具/sublime/">
+                    sublime <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-1" collapse-level="1">
+                <a class="no-padding" href="/blog/categories/工具/hexo/">
+                    hexo <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-1" collapse-level="1">
+                <a class="no-padding" href="/blog/categories/工具/git/">
+                    git <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/blog/categories/服务器/">
+                    服务器 <span class="right">2 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-1" collapse-level="1">
+                <a class="no-padding" href="/blog/categories/服务器/nginx/">
+                    nginx <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-1" collapse-level="1">
+                <a class="no-padding" href="/blog/categories/服务器/linux/">
+                    linux <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/blog/categories/php/">
+                    php <span class="right">3 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-1" collapse-level="1">
+                <a class="no-padding" href="/blog/categories/php/require/">
+                    require <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/blog/categories/前段/">
+                    前段 <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-1" collapse-level="1">
+                <a class="no-padding" href="/blog/categories/前段/css/">
+                    css <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/blog/categories/windows/">
+                    windows <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-1" collapse-level="1">
+                <a class="no-padding" href="/blog/categories/windows/cmd/">
+                    cmd <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/blog/categories/mysql/">
+                    mysql <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-1" collapse-level="1">
+                <a class="no-padding" href="/blog/categories/mysql/安装/">
+                    安装 <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/blog/categories/ip/">
+                    ip <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+    </ul>
+</div>
+
+        </div>
+    </div>
+</nav>
+
+<div id="search" class="modal search-modal">
+    <div class="row">
+        <div class="input-field col s12">
+              <input id="search-input" type="text">
+              <label for="search-input">搜索</label>
+        </div>
+
+    </div>
+    <div id="search-result" class="search-result col s12">
+
+    </div>
+</div>
+
+
+    <main>
+        <div class="container main-container">
+    <nav class="page-nav hide-on-small-only">
+    <div class="nav-wrapper teal lighten-1">
+        <span class="breadcrumb">当前位置（分类目录）</span>
+        
+            
+    
+    
+    <a class="breadcrumb" href="/blog/categories/php/">php</a>
+
+
+        
+
+        
+    </div>
+</nav>
+
+<article>
+    <div class="card">
+        <div class="card-content">
+            
+
+            <div class="article-title">
+                
+    
+        <h1>Yii 常用</h1>
+    
+
+
+            </div>
+            <time class="pink-link-context" datetime="2018-01-08T12:56:11.145Z"><a href="/blog/2018/01/08/yii/">2018-01-08</a></time>
+
+            <span id="busuanzi_container_page_pv" class="read-times-container">
+    <i class="fa fa-eye"></i>
+    <span id="busuanzi_value_page_pv"></span>
+</span>
+
+            
+    <div class="tags-row">
+        
+            <a href="/blog/tags/php/" class="chip blue darken-2">php</a>
+        
+    </div>
+
+
+            <div class="toc pink-link-context hide-on-med-and-down">
+    <ol class="section table-of-contents"><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#数据迁移"><span class="section table-of-contents-text">数据迁移</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#model自动更新时间"><span class="section table-of-contents-text">model自动更新时间</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#修改验证规则"><span class="section table-of-contents-text">修改验证规则</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#行为修改"><span class="section table-of-contents-text">行为修改</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#yii-查询"><span class="section table-of-contents-text">yii 查询</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#时间插件js"><span class="section table-of-contents-text">时间插件js</span></a></li></ol>
+</div>
+
+
+            <div class="entry pink-link-context">
+                <p>Yii 常用命令，函数集合<br><a id="more"></a></p>
+<h3 id="数据迁移"><a href="#数据迁移" class="headerlink" title="数据迁移"></a>数据迁移</h3><figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// php yiic migrate create create_edit_active_order_count_base</span></div><div class="line"></div><div class="line"><span class="comment">// php yiic migrate up</span></div><div class="line"></div><div class="line"><span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">safeUp</span><span class="params">()</span></span></div><div class="line">&#123;</div><div class="line">    $tableName = <span class="string">'goods'</span>;</div><div class="line">    <span class="keyword">$this</span>-&gt;addColumn($tableName, <span class="string">'order_count_base'</span>, <span class="string">"int(10) NOT NULL DEFAULT '0' COMMENT '报名人数基数'"</span>);</div><div class="line">    <span class="keyword">$this</span>-&gt;refreshTableSchema($tableName);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="model自动更新时间"><a href="#model自动更新时间" class="headerlink" title="model自动更新时间"></a>model自动更新时间</h3><figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">behaviors</span><span class="params">()</span> </span>&#123;</div><div class="line">    <span class="keyword">return</span> <span class="keyword">array</span>(</div><div class="line">        <span class="string">'CTimestampBehavior'</span> =&gt; <span class="keyword">array</span>(</div><div class="line">            <span class="string">'class'</span> =&gt; <span class="string">'zii.behaviors.CTimestampBehavior'</span>,</div><div class="line">            <span class="string">'createAttribute'</span> =&gt; <span class="string">'created'</span>,</div><div class="line">            <span class="string">'updateAttribute'</span> =&gt; <span class="string">'updated'</span>,</div><div class="line">            <span class="string">'setUpdateOnCreate'</span> =&gt; <span class="keyword">true</span>,</div><div class="line">        )</div><div class="line">    );</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="修改验证规则"><a href="#修改验证规则" class="headerlink" title="修改验证规则"></a>修改验证规则</h3><figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">rules</span><span class="params">()</span></span></div><div class="line">    &#123;</div><div class="line">        $parentRule = <span class="keyword">parent</span>::rules();</div><div class="line">        <span class="comment">// $value[0] = preg_replace('/\b *(start|end)\b,? */','',$value[0]);</span></div><div class="line">        <span class="keyword">foreach</span> ($parentRule <span class="keyword">as</span> &amp;$value) &#123;</div><div class="line">            <span class="keyword">if</span> (<span class="keyword">isset</span>($value[<span class="string">'integerOnly'</span>]))&#123;</div><div class="line">                $value[<span class="number">0</span>] = preg_replace(<span class="string">'/\b *(price|dep_price)\b,? */'</span>,<span class="string">''</span>,$value[<span class="number">0</span>]);</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">return</span> array_merge($parentRule,[</div><div class="line">            [<span class="string">'price,dep_price'</span>,<span class="string">'match'</span>,<span class="string">'pattern'</span>=&gt;<span class="string">'/^\d*\.?\d&#123;1,2&#125;$/'</span>,<span class="string">'message'</span>=&gt;<span class="string">'输入不合法'</span>]</div><div class="line">        ]);</div><div class="line">    &#125;</div><div class="line"><span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">rules</span><span class="params">()</span></span></div><div class="line">&#123;</div><div class="line">    <span class="keyword">return</span> <span class="keyword">array</span>(</div><div class="line">        <span class="comment">//必须填写</span></div><div class="line">        <span class="keyword">array</span>(<span class="string">'email, username, password,agree,verifyPassword,verifyCode'</span>, <span class="string">'required'</span>),</div><div class="line">        <span class="comment">//检查用户名是否重复</span></div><div class="line">        <span class="keyword">array</span>(<span class="string">'email'</span>,<span class="string">'unique'</span>,<span class="string">'message'</span>=&gt;<span class="string">'用户名已占用'</span>),</div><div class="line">        <span class="comment">//用户输入最大的字符限制</span></div><div class="line">        <span class="keyword">array</span>(<span class="string">'email, username'</span>, <span class="string">'length'</span>, <span class="string">'max'</span>=&gt;<span class="number">64</span>),</div><div class="line">        <span class="comment">//限制用户最小长度和最大长度</span></div><div class="line">        <span class="keyword">array</span>(<span class="string">'username'</span>, <span class="string">'length'</span>, <span class="string">'max'</span>=&gt;<span class="number">7</span>, <span class="string">'min'</span>=&gt;<span class="number">2</span>, <span class="string">'tooLong'</span>=&gt;<span class="string">'用户名请输入长度为4-14个字符'</span>, <span class="string">'tooShort'</span>=&gt;<span class="string">'用户名请输入长度为2-7个字'</span>),</div><div class="line">        <span class="comment">//限制密码最小长度和最大长度</span></div><div class="line">        <span class="keyword">array</span>(<span class="string">'password'</span>, <span class="string">'length'</span>, <span class="string">'max'</span>=&gt;<span class="number">22</span>, <span class="string">'min'</span>=&gt;<span class="number">6</span>, <span class="string">'tooLong'</span>=&gt;<span class="string">'密码请输入长度为6-22位字符'</span>, <span class="string">'tooShort'</span>=&gt;<span class="string">'密码请输入长度为6-22位字符'</span>),</div><div class="line">        <span class="comment">//判断用户输入的是否是邮件</span></div><div class="line">        <span class="keyword">array</span>(<span class="string">'email'</span>,<span class="string">'email'</span>,<span class="string">'message'</span>=&gt;<span class="string">'邮箱格式错误'</span>),</div><div class="line">        <span class="comment">//检查用户输入的密码是否是一样的</span></div><div class="line">        <span class="keyword">array</span>(<span class="string">'verifyPassword'</span>, <span class="string">'compare'</span>, <span class="string">'compareAttribute'</span>=&gt;<span class="string">'password'</span>, <span class="string">'message'</span>=&gt;<span class="string">'请再输入确认密码'</span>),</div><div class="line">        <span class="comment">//检查用户是否同意协议条款</span></div><div class="line">        <span class="keyword">array</span>(<span class="string">'agree'</span>, <span class="string">'required'</span>, <span class="string">'requiredValue'</span>=&gt;<span class="keyword">true</span>,<span class="string">'message'</span>=&gt;<span class="string">'请确认是否同意隐私权协议条款'</span>),</div><div class="line">        <span class="comment">//判断是否是日期格式</span></div><div class="line">        <span class="keyword">array</span>(<span class="string">'created'</span>, <span class="string">'date'</span>, <span class="string">'format'</span>=&gt;<span class="string">'yyyy/MM/dd/ HH:mm:ss'</span>),</div><div class="line">        <span class="comment">//判断是否包含输入的字符</span></div><div class="line">        <span class="keyword">array</span>(<span class="string">'superuser'</span>, <span class="string">'in'</span>, <span class="string">'range'</span> =&gt; <span class="keyword">array</span>(<span class="number">0</span>, <span class="number">1</span>)),</div><div class="line">        <span class="comment">//正则验证器：       </span></div><div class="line">        <span class="keyword">array</span>(<span class="string">'name'</span>,<span class="string">'match'</span>,<span class="string">'pattern'</span>=&gt;<span class="string">'/^[a-z0-9\-_]+$/'</span>),</div><div class="line">        <span class="comment">//数字验证器：              </span></div><div class="line">        <span class="keyword">array</span>(<span class="string">'id'</span>, <span class="string">'numerical'</span>, <span class="string">'min'</span>=&gt;<span class="number">1</span>, <span class="string">'max'</span>=&gt;<span class="number">10</span>, <span class="string">'integerOnly'</span>=&gt;<span class="keyword">true</span>),</div><div class="line">        <span class="comment">//类型验证 integer,float,string,array,date,time,datetime                </span></div><div class="line">        <span class="keyword">array</span>(<span class="string">'created'</span>, <span class="string">'type'</span>, <span class="string">'datetime'</span>),</div><div class="line">        <span class="comment">//文件验证：       </span></div><div class="line">        <span class="keyword">array</span>(<span class="string">'filename'</span>, <span class="string">'file'</span>, <span class="string">'allowEmpty'</span>=&gt;<span class="keyword">true</span>, <span class="string">'types'</span>=&gt;<span class="string">'zip, rar, xls, pdf, ppt'</span>,<span class="string">'tooLarge'</span>=&gt;<span class="string">'图片不要超过800K'</span>),</div><div class="line">              <span class="keyword">array</span>(<span class="string">'url'</span>, </div><div class="line">                <span class="string">'file'</span>,    <span class="comment">//定义为file类型 </span></div><div class="line">                <span class="string">'allowEmpty'</span>=&gt;<span class="keyword">true</span>,  </div><div class="line">                <span class="string">'types'</span>=&gt;<span class="string">'jpg,png,gif,doc,docx,pdf,xls,xlsx,zip,rar,ppt,pptx'</span>,   <span class="comment">//上传文件的类型 </span></div><div class="line">                <span class="string">'maxSize'</span>=&gt;<span class="number">1024</span>*<span class="number">1024</span>*<span class="number">10</span>,    <span class="comment">//上传大小限制，注意不是php.ini中的上传文件大小 </span></div><div class="line">                <span class="string">'tooLarge'</span>=&gt;<span class="string">'文件大于10M，上传失败！请上传小于10M的文件！'</span> </div><div class="line">            ), </div><div class="line"> &#125; );</div><div class="line"> </div><div class="line">$news= <span class="keyword">new</span> news(<span class="string">'search'</span>); <span class="comment">//search关联规则</span></div></pre></td></tr></table></figure>
+<h3 id="行为修改"><a href="#行为修改" class="headerlink" title="行为修改"></a>行为修改</h3><figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">behaviors</span><span class="params">()</span> </span>&#123;</div><div class="line">        $behaviors = <span class="keyword">parent</span>::behaviors();</div><div class="line">        $behaviors[<span class="string">'PriceBehavior'</span>] = [</div><div class="line">            <span class="string">'class'</span> =&gt; <span class="string">'application.extensions.PriceBehavior'</span>,</div><div class="line">            <span class="string">'priceArray'</span> =&gt; [<span class="string">'price'</span>,<span class="string">'dep_price'</span>],</div><div class="line">        ];</div><div class="line">        <span class="keyword">return</span> $behaviors;</div><div class="line">    &#125;</div><div class="line"></div><div class="line"><span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">behaviors</span><span class="params">()</span> </span>&#123;</div><div class="line">        <span class="keyword">return</span> <span class="keyword">array</span>( <span class="string">'CTimestampBehavior'</span> =&gt; <span class="keyword">array</span>(</div><div class="line">                <span class="string">'class'</span> =&gt; <span class="string">'zii.behaviors.CTimestampBehavior'</span>,</div><div class="line">                <span class="string">'createAttribute'</span> =&gt; <span class="string">'created'</span>,</div><div class="line">                <span class="string">'updateAttribute'</span> =&gt; <span class="string">'updated'</span>,</div><div class="line">                <span class="string">'setUpdateOnCreate'</span> =&gt; <span class="keyword">true</span>,</div><div class="line">            )</div><div class="line">        );</div><div class="line">    &#125;</div><div class="line"></div><div class="line"></div><div class="line"><span class="meta">&lt;?php</span></div><div class="line"></div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">PriceBehavior</span> <span class="keyword">extends</span> <span class="title">CActiveRecordBehavior</span></span></div><div class="line">&#123;</div><div class="line"></div><div class="line">    <span class="keyword">public</span> $priceArray = [];</div><div class="line"></div><div class="line">    <span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">beforeSave</span><span class="params">($event)</span></span></div><div class="line">    &#123;</div><div class="line">        <span class="keyword">foreach</span> (<span class="keyword">$this</span>-&gt;priceArray <span class="keyword">as</span> $value) &#123;</div><div class="line">            <span class="keyword">$this</span>-&gt;getOwner()-&gt;&#123;$value&#125; = <span class="keyword">$this</span>-&gt;getOwner()-&gt;&#123;$value&#125; * <span class="number">100</span>;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">    </div><div class="line">    <span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">afterFind</span><span class="params">($event)</span></span></div><div class="line">    &#123;</div><div class="line">        <span class="keyword">foreach</span> (<span class="keyword">$this</span>-&gt;priceArray <span class="keyword">as</span> $value) &#123;</div><div class="line">            <span class="keyword">$this</span>-&gt;getOwner()-&gt;&#123;$value&#125; = <span class="keyword">$this</span>-&gt;getOwner()-&gt;&#123;$value&#125; / <span class="number">100</span>;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">   </div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="yii-查询"><a href="#yii-查询" class="headerlink" title="yii 查询"></a>yii 查询</h3><figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">beforeAction</span><span class="params">($action)</span></span></div><div class="line">    &#123;</div><div class="line">        <span class="keyword">if</span> (($id = Yii::app()-&gt;request-&gt;getParam(<span class="string">'id'</span>, <span class="number">0</span>)) == <span class="number">0</span>) &#123;</div><div class="line">            <span class="keyword">$this</span>-&gt;model = OrderExt::model();</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">if</span> (is_null(<span class="keyword">$this</span>-&gt;model)) &#123;</div><div class="line">            <span class="keyword">$this</span>-&gt;model = OrderExt::model()-&gt;findByPk($id);</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">return</span> <span class="keyword">parent</span>::beforeAction($action);</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">actionIndex</span><span class="params">()</span></span></div><div class="line">    &#123;</div><div class="line">        <span class="keyword">if</span> (!<span class="keyword">empty</span>($params = Yii::app()-&gt;getRequest()-&gt;getParam(get_class(<span class="keyword">$this</span>-&gt;model)))) &#123;</div><div class="line">            <span class="keyword">$this</span>-&gt;model-&gt;attributes = $params;</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">$this</span>-&gt;model-&gt;orderstatus = OrderExt::ORDERSTATUS_JYCG;</div><div class="line">        $query = <span class="keyword">$this</span>-&gt;model-&gt;getDbCriteria();</div><div class="line">        $query-&gt;select =  <span class="string">'sum(price) as price'</span>;</div><div class="line">        $price = OrderExt::model()-&gt;find($query)-&gt;price;</div><div class="line">        <span class="keyword">$this</span>-&gt;render(<span class="string">'index'</span>, [</div><div class="line">            <span class="string">'model'</span> =&gt; <span class="keyword">$this</span>-&gt;model,</div><div class="line">            <span class="string">'price'</span> =&gt; $price,</div><div class="line">        ]);</div><div class="line">    &#125;</div><div class="line"><span class="comment">/// 添加自定义不在数据库中熟悉1.0</span></div><div class="line">   <span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">rules</span><span class="params">()</span> </span>&#123;</div><div class="line">        $parentRule = <span class="keyword">parent</span>::rules();</div><div class="line">        <span class="comment">// $value[0] = preg_replace('/\b *(start|end)\b,? */','',$value[0]);</span></div><div class="line">        <span class="keyword">foreach</span> ($parentRule <span class="keyword">as</span> &amp;$value) &#123;</div><div class="line">            <span class="keyword">if</span> (<span class="keyword">isset</span>($value[<span class="string">'on'</span>]) &amp;&amp; $value[<span class="string">'on'</span>] == <span class="string">'search'</span>) &#123;</div><div class="line">                $value[<span class="number">0</span>] .= <span class="string">',searchType,searchName'</span>;</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">return</span> array_merge($parentRule, [</div><div class="line">            <span class="keyword">array</span>(<span class="string">'searchType,searchName'</span>, <span class="string">'length'</span>, <span class="string">'max'</span> =&gt; <span class="number">100</span>),</div><div class="line">        ]);</div><div class="line">    &#125;</div><div class="line"></div><div class="line"></div><div class="line"><span class="comment">// 关联查询1.0</span></div><div class="line">        $criteria-&gt;mergeWith([</div><div class="line">            <span class="string">"with"</span> =&gt;[ <span class="string">'user'</span>=&gt; [</div><div class="line">                        <span class="string">'alias'</span>=&gt;<span class="string">'u'</span>,</div><div class="line">                        <span class="string">'select'</span>=&gt;<span class="string">'u.phone'</span>,</div><div class="line">                    ]</div><div class="line">                ]</div><div class="line">        ]);</div><div class="line"></div><div class="line"><span class="comment">// 修改rule</span></div><div class="line">   <span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">rules</span><span class="params">()</span></span></div><div class="line">    &#123;</div><div class="line">        $parentRule = <span class="keyword">parent</span>::rules();</div><div class="line">        <span class="comment">// $value[0] = preg_replace('/\b *(start|end)\b,? */','',$value[0]);</span></div><div class="line">        <span class="keyword">foreach</span> ($parentRule <span class="keyword">as</span> &amp;$value) &#123;</div><div class="line">            <span class="keyword">if</span> (<span class="keyword">isset</span>($value[<span class="string">'integerOnly'</span>]))&#123;</div><div class="line">                $value[<span class="number">0</span>] = preg_replace(<span class="string">'/\b *(ex_price)\b,? */'</span>,<span class="string">''</span>,$value[<span class="number">0</span>]);</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">return</span> array_merge($parentRule,[</div><div class="line">            [<span class="string">'ex_price'</span>,<span class="string">'match'</span>,<span class="string">'pattern'</span>=&gt;<span class="string">'/^\d*\.?\d&#123;1,2&#125;$/'</span>,<span class="string">'message'</span>=&gt;<span class="string">'输入不合法'</span>]</div><div class="line">        ]);</div><div class="line">    &#125;</div></pre></td></tr></table></figure>
+<h3 id="时间插件js"><a href="#时间插件js" class="headerlink" title="时间插件js"></a>时间插件js</h3><figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">&lt;script&gt; <span class="meta">&lt;?php</span> Tools::startJs() <span class="meta">?&gt;</span></div><div class="line">    $(<span class="string">'#time'</span>).datetimepicker(&#123;</div><div class="line">      minView: <span class="string">"month"</span>,<span class="comment">//设置只显示到月份</span></div><div class="line">      format : <span class="string">"yyyy-mm-dd"</span>,<span class="comment">//日期格式</span></div><div class="line">      autoclose:<span class="keyword">true</span>,<span class="comment">//选中关闭</span></div><div class="line">      <span class="comment">// todayBtn: true,//今日按钮</span></div><div class="line">      language: <span class="string">"zh-CN"</span>,</div><div class="line">    &#125;);</div><div class="line"><span class="meta">&lt;?php</span> Tools::endJs() <span class="meta">?&gt;</span> &lt;/script&gt;</div></pre></td></tr></table></figure>
+
+                
+
+
+<p class="pink-link-context">
+    <a href="/blog/2018/01/01/ip/" rel="next" title="被禁用ip">
+    下一篇：被禁用ip
+  </a>
+</p>
+
+
+            </div>
+			
+        </div>
+    </div>
+</article>
+
+
+
+
+
+
+</div>
+
+        <div class="fixed-action-btn float-sitemap">
+    <a class="btn-floating btn-large pink">
+      <i class="fa fa-caret-square-o-up"></i>
+    </a>
+    <ul>
+      <li><a class="btn-return-top btn-floating waves-effect green" title="回到顶部"><i class="fa fa-arrow-circle-o-up"></i></a></li>
+      <li><a class="btn-floating waves-effect button-collapse yellow darken-1"  data-activates="main-menu" title="menu"><i class="fa fa-navicon"></i></a></li>
+    </ul>
+  </div>
+
+    </main>
+    
+
+    <noscript>
+    <div class="noscript">
+        <p class="center-align">当前网速较慢或者你使用的浏览器不支持博客特定功能，请尝试刷新或换用Chrome、Firefox等现代浏览器</p>
+    </div>
+</noscript>
+<div class="noscript">
+    <p class="center-align">当前网速较慢或者你使用的浏览器不支持博客特定功能，请尝试刷新或换用Chrome、Firefox等现代浏览器</p>
+</div>
+
+
+<script src="/blog/js/jquery.min.js"></script>
+<script src="/blog/js/materialize.min.js"></script>
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+
+<script>
+    (function($) {
+        $(document).ready(function() {
+            // 隐藏禁用javascript（针对微信内置浏览器）的提示
+            $('.noscript').hide();
+
+            // 图片缩放效果
+            var $imgs = $('img').not('.slider-image').not('.avatar-image').not('.carousel-image').not('.card-cover-image').not('.qrcode');
+
+            // 给图片加上点击放大效果（materialbox插件）
+            $imgs.addClass('materialboxed').each(function(i, el) {
+                $(this).attr('data-caption', $(this).attr('alt') || ' ');
+            }).materialbox();
+
+            // 优化表格的显示
+            $('table').each(function() {
+                var $table = $(this);
+                // 除去多行代码的情况
+                if ($table.find('pre').length == 0) {
+                    $table.addClass('responsive-table striped bordered');
+                }
+            });
+
+            // 首页幻灯片
+            $('.slider').slider({indicators: true, full_width: true, interval: 8000});
+
+            $(".button-collapse").sideNav();
+            $(".category-menu").sideNav();
+
+            // 针对gallery post
+            $('.carousel').carousel({full_width: true});
+            $('.carousel-control.prev').click(function() {
+                $('.carousel').carousel('prev');
+            });
+            $('.carousel-control.next').click(function() {
+                $('.carousel').carousel('next');
+            });
+
+            // 文章目录
+            $('article').not('.simple-article').find('h1').add('h2').add('h3').add('h4').add('h5').add('h6').scrollSpy();
+
+            // 目录随屏幕滚动（防止目录过长越过footer）
+            var $toc = $('.toc');
+            var scrollTargetTop = 0;
+            $(window).scroll(function() {
+                var $activeLink = $toc.find('a.active.section');
+                if ($(window).scrollTop() < 100) {
+                    scrollTargetTop = 0;
+                } else {
+                    if ($activeLink[0]) {
+                        scrollTargetTop = $activeLink.offset().top - $toc.offset().top;
+                    }
+                }
+                $toc.css('top', '-' + scrollTargetTop + 'px');
+            });
+
+            // 修正文章目录的left-border颜色
+            var color = $('.table-of-contents-text').css('color');
+            $('.table-of-contents-link').css('border-left-color', color);
+
+            // 针对移动端做的优化：FAB按钮点击一下收回
+            if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+                $('.fixed-action-btn').addClass('click-to-toggle');
+            }
+            // 回到顶部
+            $('.btn-return-top').click(function() {
+                $('body, html').animate({
+                    scrollTop: 0
+                }, 500);
+            });
+
+            // 重置读书页面的Tab标签页的颜色
+            $('li.tab a').hover(function() {
+                $(this).toggleClass('text-lighten-4');
+            });
+            $('.indicator').addClass('teal lighten-1 lighten-2');
+
+            
+            // 添加new标签
+            $('.menu-reading, .menu-about').append('<span class="new badge pink"></span>');
+            
+
+            // 搜索功能
+            $('.modal-trigger').leanModal({
+                // 打开搜索框时自动聚焦
+                ready: function() {
+                    if ($('#search').is(":visible")) {
+                        $('#search-input').focus();
+                    }
+                }
+            });
+            var searchXml = "search.xml";
+            if (searchXml.length == 0) {
+             	searchXml = "search.xml";
+            }
+            var searchPath = "/blog/" + searchXml;
+            initSearch(searchPath, 'search-input', 'search-result');
+        });
+
+        // 初始化搜索与匹配函数
+        var initSearch = function(path, search_id, content_id) {
+            'use strict';
+            $.ajax({
+                url: path,
+                dataType: "xml",
+                success: function(xmlResponse) {
+                    // get the contents from search data
+                    var datas = $("entry", xmlResponse).map(function() {
+                        return {
+                            title: $("title", this).text(),
+                            content: $("content", this).text(),
+                            url: $("url", this).text()
+                        };
+                    }).get();
+                    var $input = document.getElementById(search_id);
+                    var $resultContent = document.getElementById(content_id);
+                    $input.addEventListener('input', function() {
+                        var str = '<ul class=\"search-result-list\">';
+                        var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                        $resultContent.innerHTML = "";
+                        if (this.value.trim().length <= 0) {
+                            return;
+                        }
+                        // perform local searching
+                        datas.forEach(function(data) {
+                            var isMatch = true;
+                            var content_index = [];
+                            var data_title = data.title.trim().toLowerCase();
+                            var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                            var data_url = data.url;
+                            var index_title = -1;
+                            var index_content = -1;
+                            var first_occur = -1;
+                            // only match artiles with not empty titles and contents
+                            if (data_title != '' && data_content != '') {
+                                keywords.forEach(function(keyword, i) {
+                                    index_title = data_title.indexOf(keyword);
+                                    index_content = data_content.indexOf(keyword);
+                                    if (index_title < 0 && index_content < 0) {
+                                        isMatch = false;
+                                    } else {
+                                        if (index_content < 0) {
+                                            index_content = 0;
+                                        }
+                                        if (i == 0) {
+                                            first_occur = index_content;
+                                        }
+                                    }
+                                });
+                            }
+                            // show search results
+                            if (isMatch) {
+                                keywords.forEach(function(keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    data_title = data_title.replace(regS, "<span class=\"search-keyword pink lighten-2\">" + keyword + "</span>");
+                                });
+                                var data_url_change = data_url.replace('/blog','');
+                                str += "<li><a href='" + data_url_change + "' class='search-result-title'>" + data_title + "</a>";
+                                var content = data.content.trim().replace(/<[^>]+>/g, "");
+                                if (first_occur >= 0) {
+                                    // cut out 100 characters
+                                    var start = first_occur - 20;
+                                    var end = first_occur + 80;
+                                    if (start < 0) {
+                                        start = 0;
+                                    }
+                                    if (start == 0) {
+                                        end = 100;
+                                    }
+                                    if (end > content.length) {
+                                        end = content.length;
+                                    }
+                                    var match_content = content.substring(start, end);
+                                    // highlight all keywords
+                                    keywords.forEach(function(keyword) {
+                                        var regS = new RegExp(keyword, "gi");
+                                        match_content = match_content.replace(regS, "<span class=\"search-keyword pink lighten-2\">" + keyword + "</span>");
+                                    });
+
+                                    str += "<p class=\"search-result\">..." + match_content + "...</p>"
+                                }
+                                str += "</li>";
+                            }
+                        });
+                        str += "</ul>";
+                        $resultContent.innerHTML = str;
+                    });
+                }
+            });
+        }
+    })(jQuery);
+</script>
+
+
+<script src="/blog/js/prettify.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $("pre").addClass("prettyprint");
+        prettyPrint();
+    });
+</script>
+
+
+
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+});
+</script>
+<script type="text/javascript" async
+  src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+
+
+</body>
+</html>
